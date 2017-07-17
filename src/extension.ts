@@ -18,11 +18,6 @@ import {vsprintf} from 'sprintf-js';
 // activated the very first time the command is executed
 export function activate(context : vscode.ExtensionContext) {
 
-    // Use the console to output diagnostic information (console.log) and errors
-    // (console.error) This line of code will only be executed once when your
-    // extension is activated
-    console.log('Congratulations, your extension "pzformat" is now active!');
-
     // The command has been defined in the package.json file Now provide the
     // implementation of the command with  registerCommand The commandId parameter
     // must match the command field in package.json
@@ -32,7 +27,7 @@ export function activate(context : vscode.ExtensionContext) {
             // The code you place here will be executed every time your command is executed
             try {
 
-                let defaultSep = /[,，;]/g
+                let defaultSep = /[,，;\s]/g
                 let editor = window.activeTextEditor;
                 let doc = editor.document;
                 let selections = editor.selections;
@@ -63,7 +58,7 @@ export function activate(context : vscode.ExtensionContext) {
                         if (args.length == 0) {
                             continue;
                         }
-                        result += vsprintf(formatStr, args) + '\r\n';
+                        result += vsprintf(formatStr, args);
                     }
                     let uri = vscode.window.activeTextEditor.document.uri;
                     workspaceEdit.replace(uri, selection, result);
