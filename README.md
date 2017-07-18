@@ -5,7 +5,7 @@ A clipboard format utility base on the [sprintf.js](https://github.com/alexei/sp
 
 ## Features
 
-![demo](src/pzformat_demo.gif)
+![demo](https://github.com/pandazki/vscode-pzformat/blob/master/src/pzformat_demo.gif)
 
 ## Usage
 ### 1. Copy or cut your format string.(Just put it into your clipboard)
