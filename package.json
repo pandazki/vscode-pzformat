@@ -1,8 +1,8 @@
 {
   "name": "pzformat",
-  "displayName": "pzformat",
+  "displayName": "Clipboard Format",
   "description": "a clipboard format util.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "pandazki",
   "engines": {
     "vscode": "^1.13.0"
