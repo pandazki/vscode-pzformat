@@ -5,8 +5,7 @@ A clipboard format utility base on the [sprintf.js](https://github.com/alexei/sp
 
 ## Features
 
-* screen record from sublime+pzformat.
-![alt tag](src/pzformat_demo.gif)
+![demo](src/pzformat_demo.gif)
 
 ## Usage
 ### 1. Copy or cut your format string.(Just put it into your clipboard)
@@ -23,7 +22,7 @@ eg.
 3 Tom male
 ```
 
-### 3. Press [<code>cmd+shift+o</code>,<code>cmd+shift+f</code>]
+### 3. Press [`cmd+shift+p`] and type `clipboard format`
 All done.
 
 ### more
