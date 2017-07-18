@@ -2,7 +2,7 @@
   "name": "pzformat",
   "displayName": "Clipboard Format",
   "description": "a clipboard format util.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "pandazki",
   "engines": {
     "vscode": "^1.13.0"
